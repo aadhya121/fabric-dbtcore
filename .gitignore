@@ -7,7 +7,6 @@ package-lock*
 devcontainer-lock*
 .env*
 !.env.example
-
 **/.dbt/
 *:Zone.Identifier
 
