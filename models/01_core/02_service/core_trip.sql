@@ -11,7 +11,7 @@ select distinct
                 else lower(table_type)
             end as "table_type"
 
-        from dwh_core.information_schema.tables
+        from information_schema.tables
         where table_schema like 'dbo'
         and table_name like '%'
         and table_name not like ''
