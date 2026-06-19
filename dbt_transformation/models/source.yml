@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+
+  - name: core_dbo
+    database: dwh_core
+    schema: dbo
+
+    tables:
+        - name: Trip
+    
+  - name: information_schema
+    database: dwh_core
+    schema: information_schema
+
+    tables:
+      - name: tables

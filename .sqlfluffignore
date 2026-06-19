@@ -1,0 +1,5 @@
+path/dbt_packages
+path/logs
+path/target
+path/macros
+path/tests

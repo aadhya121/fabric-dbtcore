@@ -1,0 +1,9 @@
+[sqlfluff]
+exclude_rules = LT05, LT02, LT01, LT04 -- Include/exclude based on project code format
+templater = dbt
+dialect = tsql
+max_line_length = 150
+
+[sqlfluff:templater:dbt]
+project_dir = dbt_transformation
+profiles_dir = dbt_transformation/.dbt

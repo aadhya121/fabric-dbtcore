@@ -1,0 +1,197 @@
+version: 2
+
+sources:
+  - name: dbo
+    tables:
+      - name: date
+        columns:
+          - name: dateid
+            data_type: int
+          - name: date
+            data_type: datetime2
+          - name: datebkey
+            data_type: char
+          - name: dayofmonth
+            data_type: varchar
+          - name: daysuffix
+            data_type: varchar
+          - name: dayname
+            data_type: varchar
+          - name: dayofweek
+            data_type: char
+          - name: dayofweekinmonth
+            data_type: varchar
+          - name: dayofweekinyear
+            data_type: varchar
+          - name: dayofquarter
+            data_type: varchar
+          - name: dayofyear
+            data_type: varchar
+          - name: weekofmonth
+            data_type: varchar
+          - name: weekofquarter
+            data_type: varchar
+          - name: weekofyear
+            data_type: varchar
+          - name: month
+            data_type: varchar
+          - name: monthname
+            data_type: varchar
+          - name: monthofquarter
+            data_type: varchar
+          - name: quarter
+            data_type: char
+          - name: quartername
+            data_type: varchar
+          - name: year
+            data_type: char
+          - name: yearname
+            data_type: char
+          - name: monthyear
+            data_type: char
+          - name: mmyyyy
+            data_type: char
+          - name: firstdayofmonth
+            data_type: date
+          - name: lastdayofmonth
+            data_type: date
+          - name: firstdayofquarter
+            data_type: date
+          - name: lastdayofquarter
+            data_type: date
+          - name: firstdayofyear
+            data_type: date
+          - name: lastdayofyear
+            data_type: date
+          - name: isholidayusa
+            data_type: bit
+          - name: isweekday
+            data_type: bit
+          - name: holidayusa
+            data_type: varchar
+
+      - name: geography
+        columns:
+          - name: geographyid
+            data_type: int
+          - name: zipcodebkey
+            data_type: varchar
+          - name: county
+            data_type: varchar
+          - name: city
+            data_type: varchar
+          - name: state
+            data_type: varchar
+          - name: country
+            data_type: varchar
+          - name: zipcode
+            data_type: varchar
+
+      - name: hackneylicense
+        columns:
+          - name: hackneylicenseid
+            data_type: int
+          - name: hackneylicensebkey
+            data_type: varchar
+          - name: hackneylicensecode
+            data_type: varchar
+
+      - name: medallion
+        columns:
+          - name: medallionid
+            data_type: int
+          - name: medallionbkey
+            data_type: varchar
+          - name: medallioncode
+            data_type: varchar
+
+      - name: time
+        columns:
+          - name: timeid
+            data_type: int
+          - name: timebkey
+            data_type: varchar
+          - name: hournumber
+            data_type: int
+          - name: minutenumber
+            data_type: int
+          - name: secondnumber
+            data_type: int
+          - name: timeinsecond
+            data_type: int
+          - name: hourlybucket
+            data_type: varchar
+          - name: daytimebucketgroupkey
+            data_type: int
+          - name: daytimebucket
+            data_type: varchar
+
+      - name: trip
+        columns:
+          - name: dateid
+            data_type: int
+          - name: medallionid
+            data_type: int
+          - name: hackneylicenseid
+            data_type: int
+          - name: pickuptimeid
+            data_type: int
+          - name: dropofftimeid
+            data_type: int
+          - name: pickupgeographyid
+            data_type: int
+          - name: dropoffgeographyid
+            data_type: int
+          - name: pickuplatitude
+            data_type: float
+          - name: pickuplongitude
+            data_type: float
+          - name: pickuplatlong
+            data_type: varchar
+          - name: dropofflatitude
+            data_type: float
+          - name: dropofflongitude
+            data_type: float
+          - name: dropofflatlong
+            data_type: varchar
+          - name: passengercount
+            data_type: int
+          - name: tripdurationseconds
+            data_type: int
+          - name: tripdistancemiles
+            data_type: float
+          - name: paymenttype
+            data_type: varchar
+          - name: fareamount
+            data_type: decimal
+          - name: surchargeamount
+            data_type: decimal
+          - name: taxamount
+            data_type: decimal
+          - name: tipamount
+            data_type: decimal
+          - name: tollsamount
+            data_type: decimal
+          - name: totalamount
+            data_type: decimal
+
+      - name: vw_paymentanalysis
+        columns:
+          - name: paymenttype
+            data_type: varchar
+          - name: paymentscount
+            data_type: int
+          - name: totalamountprocessed
+            data_type: decimal
+
+      - name: weather
+        columns:
+          - name: dateid
+            data_type: int
+          - name: geographyid
+            data_type: int
+          - name: precipitationinches
+            data_type: float
+          - name: avgtemperaturefahrenheit
+            data_type: float
+

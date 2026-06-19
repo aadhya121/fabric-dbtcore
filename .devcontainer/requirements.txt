@@ -1,0 +1,7 @@
+dbt-core==1.10.4
+dbt-fabric==1.9.8
+keyrings.alt==5.0.2
+pre-commit==4.6.0
+sqlfluff==4.1.0
+sqlfluff-templater-dbt==4.1.0
+commitizen==4.15.1

@@ -1,0 +1,15 @@
+.vscode/
+logs/
+target/
+dbt_packages/
+logs
+package-lock*
+devcontainer-lock*
+.env*
+!.env.example
+
+**/.dbt/
+*:Zone.Identifier
+
+.DS_Store
+Thumbs.db
